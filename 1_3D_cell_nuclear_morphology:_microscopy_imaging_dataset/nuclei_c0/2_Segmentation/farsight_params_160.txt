@@ -1,0 +1,10 @@
+high_sensitivity : 0
+LoG_size : 30
+min_scale : 30
+max_scale : 35
+xy_clustering_res : 2
+z_clustering_res : 1
+finalize_segmentation : 1
+sampling_ratio_XY_to_Z : 2
+Use_Distance_Map : 1
+refinement_range : 5

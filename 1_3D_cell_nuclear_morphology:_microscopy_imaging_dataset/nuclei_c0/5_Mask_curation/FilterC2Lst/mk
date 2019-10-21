@@ -1,0 +1,1 @@
+javac -cp .:../ij.jar FilterC2Lst.java

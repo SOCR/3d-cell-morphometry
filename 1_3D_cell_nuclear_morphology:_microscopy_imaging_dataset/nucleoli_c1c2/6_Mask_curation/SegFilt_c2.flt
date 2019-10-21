@@ -1,0 +1,12 @@
+Version,1.1
+Warning, do not change file structure or order
+VoxelsMin,23
+VoxelsMax,35000
+VoidsMin,0
+VoidsMax,99999999
+EdgesMin,0
+EdgesMax,0
+BoundsMin,0
+BoundsMax,0
+CsMin,0.01
+CsMax,2.0
