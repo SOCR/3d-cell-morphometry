@@ -6,10 +6,11 @@ This is the repository for workflows, source code, and documentation associated 
 
 ## Structure of the repository:
 
-Materials are provided in 2 parts corresponding to [publications](#Publications):
+Materials are provided in 3 parts corresponding to [publications](#Publications):
 
 1. [3D cell nuclear morphology: microscopy imaging dataset](./1_3D_cell_nuclear_morphology:_microscopy_imaging_dataset)
 2. [3D cell nuclear shape modeling, morphometry, and classification](./2_3D_cell_nuclear_shape_modeling_morphometry)
+3. [4D nuclear morphometry of VPA-treated astrocytes](./3_4D_nuclear_morphometry_vpa_treated_astrocytes)
  
 We also provide an example of how to use these materials in the pipeline workflow:
 
@@ -17,9 +18,11 @@ We also provide an example of how to use these materials in the pipeline workflo
 
 ## Publications
 
-If you find this work useful please cite following publications:
+If you find this work useful please cite a corresponding publication:
 
-DOI: [10.1109/CVPRW.2018.00304](https://doi.org/10.1109/CVPRW.2018.00304)
+1. 3D cell nuclear morphology: microscopy imaging dataset and voxel-based morphometry classification results
+
+[CVPRW, 2018](https://doi.org/10.1109/CVPRW.2018.00304)
  ```
  @inproceedings{kalinin20183ddata,
   title={3D cell nuclear morphology: microscopy imaging dataset and voxel-based morphometry classification results},
@@ -29,7 +32,9 @@ DOI: [10.1109/CVPRW.2018.00304](https://doi.org/10.1109/CVPRW.2018.00304)
   year={2018}
 ```
 
-DOI: [10.1038/S41598-018-31924-2](https://dx.doi.org/10.1038%2Fs41598-018-31924-2)
+2. 3D shape modeling for cell nuclear morphological analysis and classification
+
+[Scientific Reports, 2018](https://dx.doi.org/10.1038%2Fs41598-018-31924-2)
 ```
   @article{kalinin20183dshape,
   title={3D shape modeling for cell nuclear morphological analysis and classification},
@@ -41,9 +46,24 @@ DOI: [10.1038/S41598-018-31924-2](https://dx.doi.org/10.1038%2Fs41598-018-31924-
 }
 ```
 
+3. Valproic Acid-Induced Changes of 4D Nuclear Morphology in Astrocyte Cells
+
+[Molecular Biology of the Cell, 2021](https://doi.org/10.1091/mbc.E20-08-0502)
+ ```
+ @article{kalinin20214dvpa,
+  title={Valproic Acid-Induced Changes of 4D Nuclear Morphology in Astrocyte Cells},
+  author={Kalinin, Alexandr A and Hou, Xinhai and Ade, Alex S and Fon, Gordon-Victor and Meixner, Walter and Higgins, Gerald A and Sexton, Jonathan Z and Wan, Xiang and Dinov, Ivo D and O’Meara, Matthew J and Athey, Brian D},
+  journal={Molecular Biology of the Cell},
+  volume={32},
+  number={18},
+  pages={1624--1633},
+  year={2021},
+  publisher={American Society for Cell Biology}
+```
+
 ## License
 
-Copyright (c) 2016-2019 Regents of the University of Michigan
+Copyright (c) 2016-2022 Regents of the University of Michigan
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
