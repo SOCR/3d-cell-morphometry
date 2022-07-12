@@ -24,19 +24,20 @@ If you find this work useful please cite a corresponding publication:
 
 [CVPRW, 2018](https://doi.org/10.1109/CVPRW.2018.00304)
  ```
- @inproceedings{kalinin20183ddata,
+@inproceedings{kalinin20183ddata,
   title={3D cell nuclear morphology: microscopy imaging dataset and voxel-based morphometry classification results},
   author={Kalinin, Alexandr A and Allyn-Feuer, Ari and Ade, Alex and Fon, Gordon-Victor and Meixner, Walter and Dilworth, David and De Wet, Jeffrey R and Higgins, Gerald A and Zheng, Gen and Creekmore, Amy and Wiley, John W and Verdone, James E and Veltri, Robert W and Pienta, Kenneth J and Coffey, Donald S and Athey, Brian D and Dinov, Ivo D},
   booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops},
   pages={2272--2280},
   year={2018}
+}
 ```
 
 2. 3D shape modeling for cell nuclear morphological analysis and classification
 
 [Scientific Reports, 2018](https://dx.doi.org/10.1038%2Fs41598-018-31924-2)
 ```
-  @article{kalinin20183dshape,
+ @article{kalinin20183dshape,
   title={3D shape modeling for cell nuclear morphological analysis and classification},
   author={Kalinin, Alexandr A and Allyn-Feuer, Ari and Ade, Alex and Fon, Gordon-Victor and Meixner, Walter and Dilworth, David and Husain, Syed S and de Wett, Jeffrey R and Higgins, Gerald A and Zheng, Gen and and Creekmore, Amy and Wiley, John W and Verdone, James E and Veltri, Robert W and Pienta, Kenneth J and Coffey, Donald S and Athey, Brian D and Dinov, Ivo D},
   journal={Scientific reports},
@@ -50,7 +51,7 @@ If you find this work useful please cite a corresponding publication:
 
 [Molecular Biology of the Cell, 2021](https://doi.org/10.1091/mbc.E20-08-0502)
  ```
- @article{kalinin20214dvpa,
+@article{kalinin20214dvpa,
   title={Valproic Acid-Induced Changes of 4D Nuclear Morphology in Astrocyte Cells},
   author={Kalinin, Alexandr A and Hou, Xinhai and Ade, Alex S and Fon, Gordon-Victor and Meixner, Walter and Higgins, Gerald A and Sexton, Jonathan Z and Wan, Xiang and Dinov, Ivo D and O’Meara, Matthew J and Athey, Brian D},
   journal={Molecular Biology of the Cell},
@@ -59,6 +60,7 @@ If you find this work useful please cite a corresponding publication:
   pages={1624--1633},
   year={2021},
   publisher={American Society for Cell Biology}
+}
 ```
 
 ## License
