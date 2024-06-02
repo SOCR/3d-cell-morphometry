@@ -1,6 +1,8 @@
 # [SOCR](http://socr.umich.edu/) 3D Cell Morphometry Project
 ## 2. 3D shape modeling and morphometry
 
+Kalinin, A.A., Allyn-Feuer, A., Ade, A., Fon, G.V., Meixner, W., Dilworth, D., De Wet, J.R., Higgins, G.A., Zheng, G., Creekmore, A., Wiley, J.W., _et al_. 2018. 3D shape modeling for cell nuclear morphological analysis and classification. In _Scientific Reports_, 8(1), p. 13658. [doi:10.1038/s41598-018-31924-2](https://doi.org/10.1038/s41598-018-31924-2)
+
 ### Documentation for 3D surface modeling and morphometric features extraction
 
 Inputs: individual c0 and c2 binary masks in TIFF format

@@ -1,6 +1,8 @@
 # [SOCR](http://socr.umich.edu/) 3D Cell Morphometry Project
 ## 1. 3D cell nuclear morphology: microscopy imaging dataset
 
+Kalinin, A.A., Allyn-Feuer, A., Ade, A., Fon, G.V., Meixner, W., Dilworth, D., De Wet, J.R., Higgins, G.A., Zheng, G., Creekmore, A., Wiley, J.W., _et al_. 2018. 3D cell nuclear morphology: microscopy imaging dataset and voxel-based morphometry classification results. In _Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops_ (pp. 2272-2280). [doi:10.1109/CVPRW.2018.00304](https://doi.org/10.1109/CVPRW.2018.00304)
+
 ### Source code, models, and documentation for 3D image pre-processing, per-channel segmentation, and curation
 
 Inputs: 3D TIFF images (volumes) in each of 3 channels
