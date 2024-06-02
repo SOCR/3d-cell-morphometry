@@ -1,6 +1,6 @@
 # [SOCR](http://socr.umich.edu/) 3D Cell Morphometry Project
 
-This is the repository for workflows, source code, and documentation associated with the [3D Cell Morphometry Project](http://www.socr.umich.edu/projects/3d-cell-morphometry).
+This repository contains workflows, source code, and documentation associated with the [3D Cell Morphometry Project](http://www.socr.umich.edu/projects/3d-cell-morphometry).
 
 3D microscopic imaging data and derived binary masks are available for downloading from the [project data webpage](http://www.socr.umich.edu/projects/3d-cell-morphometry/data.html).
 
@@ -12,17 +12,16 @@ Materials are provided in 3 parts corresponding to [publications](#Publications)
 2. [3D cell nuclear shape modeling, morphometry, and classification](./2_3D_cell_nuclear_shape_modeling_morphometry)
 3. [4D nuclear morphometry of VPA-treated astrocytes](./3_4D_nuclear_morphometry_vpa_treated_astrocytes)
  
-We also provide an example of how to use these materials in the pipeline workflow:
+We also provide an example of how to run a workflow on LONI Pipeline Server:
 
-[Nuclear morphometric classification demo workflow](./demo)
+[Nuclear morphometric classification demo workflow](./2_3D_cell_nuclear_shape_modeling_morphometry/demo)
 
 ## Publications
 
-If you find this work useful please cite a corresponding publication:
+If you find this work useful please cite a corresponding publication(s):
 
-1. 3D cell nuclear morphology: microscopy imaging dataset and voxel-based morphometry classification results
+1. Kalinin, A.A., Allyn-Feuer, A., Ade, A., Fon, G.V., Meixner, W., Dilworth, D., De Wet, J.R., Higgins, G.A., Zheng, G., Creekmore, A., Wiley, J.W., _et al_. 2018. 3D cell nuclear morphology: microscopy imaging dataset and voxel-based morphometry classification results. In _Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops_ (pp. 2272-2280). [doi:10.1109/CVPRW.2018.00304](https://doi.org/10.1109/CVPRW.2018.00304)
 
-[CVPRW, 2018](https://doi.org/10.1109/CVPRW.2018.00304)
  ```
 @inproceedings{kalinin20183ddata,
   title={3D cell nuclear morphology: microscopy imaging dataset and voxel-based morphometry classification results},
@@ -33,9 +32,8 @@ If you find this work useful please cite a corresponding publication:
 }
 ```
 
-2. 3D shape modeling for cell nuclear morphological analysis and classification
+2. Kalinin, A.A., Allyn-Feuer, A., Ade, A., Fon, G.V., Meixner, W., Dilworth, D., De Wet, J.R., Higgins, G.A., Zheng, G., Creekmore, A., Wiley, J.W., _et al_. 2018. 3D shape modeling for cell nuclear morphological analysis and classification. In _Scientific Reports_, 8(1), p. 13658. [doi:10.1038/s41598-018-31924-2](https://doi.org/10.1038/s41598-018-31924-2)
 
-[Scientific Reports, 2018](https://dx.doi.org/10.1038%2Fs41598-018-31924-2)
 ```
  @article{kalinin20183dshape,
   title={3D shape modeling for cell nuclear morphological analysis and classification},
@@ -43,13 +41,11 @@ If you find this work useful please cite a corresponding publication:
   journal={Scientific reports},
   volume={8},
   year={2018},
-  publisher={Nature Publishing Group}
 }
 ```
 
-3. Valproic Acid-Induced Changes of 4D Nuclear Morphology in Astrocyte Cells
-
-[Molecular Biology of the Cell, 2021](https://doi.org/10.1091/mbc.E20-08-0502)
+3. Kalinin, A.A., Hou, X., Ade, A.S., Fon, G.V., Meixner, W., Higgins, G.A., Sexton, J.Z., Wan, X., Dinov, I.D., O’Meara, M.J. and Athey, B.D. 2021. Valproic acid-induced changes of 4D nuclear morphology in astrocyte cells. _Molecular Biology of the Cell_, 32(18), pp.1624-1633. [doi:10.1091/mbc.E20-08-0502](https://doi.org/10.1091/mbc.E20-08-0502)
+ 
  ```
 @article{kalinin20214dvpa,
   title={Valproic Acid-Induced Changes of 4D Nuclear Morphology in Astrocyte Cells},
@@ -59,13 +55,12 @@ If you find this work useful please cite a corresponding publication:
   number={18},
   pages={1624--1633},
   year={2021},
-  publisher={American Society for Cell Biology}
 }
 ```
 
 ## License
 
-Copyright (c) 2016-2022 Regents of the University of Michigan
+Copyright (c) 2016-2024 Regents of the University of Michigan
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

@@ -10,7 +10,7 @@ Inputs: 3D TIFF images (volumes) in each of 3 channels
 
 1. [Convert each volume](./nuclei_c0/1_Preprocessing) to 8-bit greyscale and apply despeckling using [ImageJ](https://imagej.nih.gov/ij/)
 2. [Segment each volume](./nuclei_c0/2_Segmentation) in 3D using
-[Farsight toolkit's Nuclear Segmentation](http://farsight-toolkit.org/wiki/Nuclear_Segmentation) algorithm
+[Farsight toolkit's Nuclear Segmentation](http://farsight-toolkit.ee.uh.edu/wiki/Nuclear_Segmentation) algorithm
 3. [Fill holes](./nuclei_c0/3_Fill_holes) in derived nuclear masks using [MATLAB](https://www.mathworks.com/products/matlab.html)
 4. [Separate nuclear masks](./nuclei_c0/4_Separate_masks) into individual volumes (implemented using [LibTIFF](http://www.libtiff.org/))
 5. [Filter out nuclear masks](./nuclei_c0/5_Mask_curation) that do not pass min and/or max thresholds for voxel count (mask volume) and compactness
