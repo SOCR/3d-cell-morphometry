@@ -1,6 +1,8 @@
 # [SOCR](http://socr.umich.edu/) 3D Cell Morphometry Project
 ## Workflows and instructions how to run them live
 
+`[June 2, 2024] Update`: Both Pipeline Client Web Start and Web App do not appear to be supported anymore, so we recommend running workflows using the desktop native [Pipeline Client](https://pipeline.loni.usc.edu/products-services/pipeline-software/). To be able to run pipelines on the LONI Pipeline Server, [apply to become a collaborator](https://pipeline.loni.usc.edu/get-started/become-a-collaborator/).
+
 ### Nuclear morphometric classification live demo:
 
 This demo is prepared for classification of serum-starved Fibroblast cells
