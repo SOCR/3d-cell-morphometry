@@ -54,52 +54,52 @@
 
     <div>
         <p class="lead">
-            Datasets produced within the project:
+            Datasets available for downloading:
         </p>
-        <!-- <ul>
+        <ul>
           <li>
             <p>
-                <strong>Fibroblast</strong> and <strong>PC3</strong> cell imaging data
+                <strong>Fibroblasts (PROLIF/SS)</strong>
                 <br>
-                For both datasets, fibroblast and PC3 cells were labeled with 3 different fluorophores: DAPI (4',6-diamidino-2-phenylindole)
-                for the nuclei, while fibrillarin antibody (fibrillarin)
-                and ethidium bromide (EtBr) were used for nucleoli staining.
-                Original 3-channel volumes were aquired using laser scanning confocal microscope.
-                They were then cut into 1024x1024xZ sub-volumes and channels were separated into c0, c1, and c2,
-                correspondingly.
-                Each link to data archive below represents one "run" of the microscope and contains original
-                1024x1024xZ TIFF sub-volumes in all 3 channels, as well as nuclear and nucleolar masks
-                after segmentation and quality control. Each tarball also contains README file with detailed
-                description of file structure inside.
-            </p>
-            <p>
-              <b>Sample preparation protocols:</b> <a href="https://www.socr.umich.edu/data/3d-cell-morphometry-data/Kalinin-et-al_3D_Morphometry_Data_Cell_Culture.pdf">PDF</a>
+                3D confocal images of nuclei and nucleoli in primary human fibroblasts, under proliferating and serum-starved conditions.
             </p>
           </li>
           <li>
             <p>
-              <strong>Caco-2</strong> cell imaging data
+                <strong>PC3 cells (EPI/EMT)</strong>
+                <br>
+                3D confocal images of nuclei and nucleoli in the PC3 human prostate cancer cell line, in epithelial and epithelial-to-mesenchymal transision states.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Caco-2</strong>
               <br>
-                Caco-2 cells were labeled with 4 different fluorophores: DAPI (4',6-diamidino-2-phenylindole)
-                for the nuclei, HES1 Alexa 647 (1:200; Abcam), NR3C1 Alexa 488 (1:150; Cell signaling) and OCLN Alexa 594 (1:600; Thermo Fisher).
-                Original multichannel volumes were aquired using laser scanning confocal microscope. For protocol details see <strong>[4]</strong>.
-                Images were saved in <a href="https://imaging.mrc-cbu.cam.ac.uk/imaging/FormatAnalyze">Analyze image format</a>,
-                in which each 3D image is represented by a pair of files: .img and .hdr.
+              3D confocal images of nuclei in the Caco-2 human colon cancer cell line.
             </p></li>
             <li>
                 <p>
-                  <strong>Astrocytes (/+VPA)</strong> cell imaging data
+                  <strong>Astrocytes (NHA/VPA)</strong>
                   <br>
-                    Primary human hippocampal astrocyte cells were treated with valproic acid (VPA) over a week at days 1, 3, 5, and 7.
-                    Samples of normal human astrocytes (NHA) and VPA-treated astrocytes (VPA) were collected on days 3, 5, and 7,
-                    stained with DAPI (4',6-diamidino-2-phenylindole) and imaged using Zeiss LSM 710 laser scanning confocal microscope
-                    with a 63× PLAN/apochromat 1.4 NA DIC objective.
+                  3D confocal images of primary human hippocampal astrocyte nuclei under untreated (NHA) and
+                  valproic acid-treated (VPA) states, across 3 timepoints.
                 </p></li>
-        </ul> -->
+        </ul>
+        <p>
+            <br>
+            <strong>LICENSE:</strong>
+            <p> Copyright © 2016-<script type="text/javascript">document.write(new Date().getFullYear());</script> Regents of the University of Michigan</p>
+            Creative Commons Attribution 4.0 International License
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+                <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+            </a>
+            <br>
+        </p>
+        <br>
         <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active">
                 <a href="#fibroblast" aria-controls="fibroblast" role="tab" data-toggle="tab">
-                    <span class="lead"> Fibroblasts (SS/PROLIF) </span>
+                    <span class="lead"> Fibroblasts (PROLIF/SS) </span>
                 </a>
             </li>
             <li role="presentation"><a href="#pc3" aria-controls="pc3" role="tab" data-toggle="tab">
@@ -107,6 +107,9 @@
             </a></li>
             <li role="presentation"><a href="#caco2" aria-controls="caco2" role="tab" data-toggle="tab">
                 <span class="lead"> Caco2 </span>
+            </a></li>
+            <li role="presentation"><a href="#astr-vpa" aria-controls="astr-vpa" role="tab" data-toggle="tab">
+                <span class="lead"> Astrocytes (NHA/VPA) </span>
             </a></li>
         </ul>
         <div class="tab-content">
@@ -123,8 +126,11 @@
                     The dataset also includes segmentation results: 965 nuclear masks (498 SS and 470 PROLIF)
                     and 2,181 nucleolar masks (1,151 SS and 1,030 PROLIF).
                 </p>
+                <p>
+                    <b>Sample preparation protocols:</b> <a href="https://www.socr.umich.edu/data/3d-cell-morphometry-data/Kalinin-et-al_3D_Morphometry_Data_Cell_Culture.pdf">PDF</a>
+                </p>
                 <p><b>
-                    <i>WARNING:</i> each run will take up to 20-30GB after extraction.
+                    <i>WARNING:</i> each directory will take up to 20-30GB after extraction.
                  </b></p>
                 <div>
                     <b>PROLIF:</b>
@@ -155,15 +161,6 @@
                     <i>2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)</i>.
                     doi: <a href="https://doi.org/10.1109/CVPRW.2018.00304">10.1109/CVPRW.2018.00304</a>
                 </p>
-                <p>
-                    <br>
-                    <b>Usage:</b> You are granted a non-exclusive license to use these images for non-commercial, research purposes,
-                    with the following conditions:
-                    <ol type="a">
-                        <li>you agree to include a reference to the corresponding paper when presenting or publishing your results,</li>
-                        <li>you agree not to re-distribute these images without inclusion of this notice.</li>
-                    </ol>
-                  </p>
             </div>
             <div role="tabpanel" class="tab-pane" id="pc3">
                 <br>
@@ -175,6 +172,9 @@
                     and then cut into Zx1024x1024 sub-volumes with channels separated into c0, c1, and c2, correspondingly.
                     The dataset also includes segmentation results: 458 nuclear (310 EPI and 148 EMT)
                     and 1,101 nucleolar (649 EPI and 452 EMT) masks.
+                </p>
+                <p>
+                    <b>Sample preparation protocols:</b> <a href="https://www.socr.umich.edu/data/3d-cell-morphometry-data/Kalinin-et-al_3D_Morphometry_Data_Cell_Culture.pdf">PDF</a>
                 </p>
                 <div>
                     <b>EPI:</b>
@@ -200,19 +200,15 @@
                     <i>2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)</i>.
                     doi: <a href="https://doi.org/10.1109/CVPRW.2018.00304">10.1109/CVPRW.2018.00304</a>
                 </p>
-                <p>
-                    <br>
-                    <b>Usage:</b> You are granted a non-exclusive license to use these images for non-commercial, research purposes,
-                    with the following conditions:
-                    <ol type="a">
-                        <li>you agree to include a reference to the corresponding paper when presenting or publishing your results,</li>
-                        <li>you agree not to re-distribute these images without inclusion of this notice.</li>
-                    </ol>
-                  </p>
             </div>
             <div role="tabpanel" class="tab-pane" id="caco2">
                 <br>
                 <p>The Caco2 dataset consists of 103 3D fluorescence microscopy images of human colon cancer cell line Caco-2.
+                Cells were labeled with 4 different fluorophores: DAPI (4',6-diamidino-2-phenylindole)
+                for the nuclei, HES1 Alexa 647 (1:200; Abcam), NR3C1 Alexa 488 (1:150; Cell signaling) and OCLN Alexa 594 (1:600; Thermo Fisher).
+                Original multichannel volumes were aquired using laser scanning confocal microscope (see the paper for details).
+                Images were saved in <a href="https://imaging.mrc-cbu.cam.ac.uk/imaging/FormatAnalyze">Analyze image format</a>,
+                in which each 3D image is represented by a pair of files: .img and .hdr.
                 </p>
                 <p><b><i>WARNING:</i> Full dataset takes ~120GB after unpacking.</b></p>
                 <p><b><i>NOTE:</i>
@@ -239,15 +235,60 @@
                     <i>Journal of Cellular and Molecular Medicine</i>, 22(12), 6380-6385.
                     doi: <a href="https://doi.org/10.1111/jcmm.13853">10.1111/jcmm.13853</a>
                 </p>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="astr-vpa">
+                <br>
+                <p>
+                    The Astrocytes dataset consists of 3D fluorescence microscopy images of primary human astrocytes (hippocampal).
+                    The dataset contains fibroblasts imaged at three timepoints (days 3, 5, and 7) and in two different phenotypic states:
+                    normal human astrocytes cutured in DMSO (NHA) and astrocytes treated with 1.5 mM valproic acid (VPA).
+                    Cell nuclei were labeled with DAPI (4',6-diamidino-2-phenylindole) and imaged using Zeiss LSM 710 laser scanning
+                    confocal microscope with a 63x PLAN/apochromat 1.4 NA DIC objective.
+                    Original 3D volumes were then cut into Zx1024x1024 sub-volumes and deconvolved using the Lucy-Richardson deconvolution
+                    algorithm (see paper for details). The dataset also includes segmented nuclei: 512 NHA masks and 320 VPA masks.
+                </p>
+                <div>
+                    <b>NHA:</b>
+                    <p>
+                        Day 3: <a href="https://www.socr.umich.edu/data/3d-cell-morphometry-data/nha_day3_deconv.tar.gz">images</a> and
+                        <a href="https://www.socr.umich.edu/data/3d-cell-morphometry-data/nha_day3_masks.tar.gz">masks</a> (7.6 GB total)
+                    </p>
+                    <p>
+                        Day 5: <a href="https://www.socr.umich.edu/data/3d-cell-morphometry-data/nha_day5_deconv.tar.gz">images</a> and
+                        <a href="https://www.socr.umich.edu/data/3d-cell-morphometry-data/nha_day5_masks.tar.gz">masks</a> (8.5 GB total)
+                    </p>
+                    <p>
+                        Day 7: <a href="https://www.socr.umich.edu/data/3d-cell-morphometry-data/nha_day7_deconv.tar.gz">images</a> and
+                        <a href="https://www.socr.umich.edu/data/3d-cell-morphometry-data/nha_day7_masks.tar.gz">masks</a> (4.5 GB total)
+                    </p>
+                    <b>VPA:</b>
+                    <p>
+                        Day 3: <a href="https://www.socr.umich.edu/data/3d-cell-morphometry-data/vpa_day3_deconv.tar.gz">images</a> and
+                        <a href="https://www.socr.umich.edu/data/3d-cell-morphometry-data/vpa_day3_masks.tar.gz">masks</a> (4.8 GB total)
+                    </p>
+                    <p>
+                        Day 5: <a href="https://www.socr.umich.edu/data/3d-cell-morphometry-data/vpa_day5_deconv.tar.gz">images</a> and
+                        <a href="https://www.socr.umich.edu/data/3d-cell-morphometry-data/vpa_day5_masks.tar.gz">masks</a> (3.0 GB total)
+                    </p>
+                    <p>
+                        Day 7: <a href="https://www.socr.umich.edu/data/3d-cell-morphometry-data/vpa_day7_deconv.tar.gz">images</a> and
+                        <a href="https://www.socr.umich.edu/data/3d-cell-morphometry-data/vpa_day7_masks.tar.gz">masks</a> (6.9 GB total)
+                    </p>
+                </div>
                 <p>
                     <br>
-                    <b>Usage:</b> You are granted a non-exclusive license to use these images for non-commercial, research purposes,
-                    with the following conditions:
-                    <ol type="a">
-                        <li>you agree to include a reference to the corresponding paper when presenting or publishing your results,</li>
-                        <li>you agree not to re-distribute these images without inclusion of this notice.</li>
-                    </ol>
-                  </p>
+                    <b>Citation:</b>
+                </p>
+                <p>
+                    <a href="https://alxndrkalinin.github.io">Kalinin AA</a>, Hou X, Ade AS, Fon GV, Meixner W
+                    Higgins GA, Zheng G, Sexton JZ, Wan X,
+                    <a href="https://atheylab.ccmb.med.umich.edu/">Athey BD</a>,
+                    <a href="https://maomlab.github.io/">O’Meara MJ</a>,
+                    <a href="https://www.socr.umich.edu/people/dinov/">Dinov ID</a>. 2018.
+                    Valproic acid-induced changes of 4D nuclear morphology in astrocyte cells.
+                    <i>Molecular Biology of the Cell</i>, 2(18), 1624-1633.
+                    doi: <a href="https://doi.org/10.1091/mbc.E20-08-0502">10.1091/mbc.E20-08-0502</a>
+                </p>
             </div>
         </div>
     </div>
