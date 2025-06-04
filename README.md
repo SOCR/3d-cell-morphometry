@@ -60,7 +60,7 @@ If you find this work useful please cite a corresponding publication(s):
 
 ## License
 
-Copyright (c) 2016-2024 Regents of the University of Michigan
+Copyright (c) 2016-2025 Regents of the University of Michigan
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
