@@ -3,9 +3,9 @@
 
 Kalinin, A.A., Hou, X., Ade, A.S., Fon, G.V., Meixner, W., Higgins, G.A., Sexton, J.Z., Wan, X., Dinov, I.D., O’Meara, M.J. and Athey, B.D. 2021. Valproic acid-induced changes of 4D nuclear morphology in astrocyte cells. _Molecular Biology of the Cell_, 32(18), pp.1624-1633. [doi:10.1091/mbc.E20-08-0502](https://doi.org/10.1091/mbc.E20-08-0502)
 
-### Description of image aquisition, processing and analysis steps
+### Description of image acquisition, processing and analysis steps
 
-#### Image aquisition
+#### Image acquisition
 
 Normal and VPA-treated astrocyte cells were labeled with DAPI (4′,6-diamidino-2-phenylindole), a common stain for the nuclear DNA. 3D imaging employed a Zeiss LSM 710 laser scanning confocal microscope with a 63× PLAN/apochromat 1.4 NA DIC objective. Each original 3D volume was then resliced into a 1024×1024×Z lattice (Z = {30,50}), where regional subvolumes facilitate the alignment with the native tile size of the microscope. For every subvolume, accompanying vendor metadata was extracted from the original data.
 
