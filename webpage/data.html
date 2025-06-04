@@ -59,27 +59,27 @@
         <ul>
           <li>
             <p>
-                <strong>Fibroblasts (PROLIF/SS)</strong>
+                <a href="#fibroblast" aria-controls="fibroblast" role="tab" data-toggle="tab"><strong>Fibroblasts (PROLIF/SS)</strong></a>
                 <br>
                 3D confocal images of nuclei and nucleoli in primary human fibroblasts, under proliferating and serum-starved conditions.
             </p>
           </li>
           <li>
             <p>
-                <strong>PC3 (EPI/EMT)</strong>
+                <a href="#pc3" aria-controls="pc3" role="tab" data-toggle="tab"><strong>PC3 (EPI/EMT)</strong></a>
                 <br>
                 3D confocal images of nuclei and nucleoli in the PC3 human prostate cancer cell line, in epithelial and epithelial-to-mesenchymal transision states.
             </p>
           </li>
           <li>
             <p>
-              <strong>Caco-2</strong>
+              <a href="#caco2" aria-controls="caco2" role="tab" data-toggle="tab"><strong>Caco-2</strong></a>
               <br>
               3D confocal images of nuclei in the Caco-2 human colon cancer cell line.
             </p></li>
             <li>
                 <p>
-                  <strong>Astrocytes (NHA/VPA)</strong>
+                  <a href="#astr-vpa" aria-controls="astr-vpa" role="tab" data-toggle="tab"><strong>Astrocytes (NHA/VPA)</strong></a>
                   <br>
                   3D confocal images of primary human hippocampal astrocyte nuclei under untreated (NHA) and
                   valproic acid-treated (VPA) states, across 3 timepoints.
@@ -158,7 +158,7 @@
                     Creekmore A, Wiley JW, Verdone JE, Veltri RW, Pienta KJ, Coffey DS,
                     <a href="https://atheylab.ccmb.med.umich.edu/">Athey BD</a>,
                     <a href="https://www.socr.umich.edu/people/dinov/">Dinov ID</a>. 2018.
-                    3D cell nuclear morphology: microscopy imaging dataset and voxel-based morphometry classification results.
+                    <strong>3D cell nuclear morphology: microscopy imaging dataset and voxel-based morphometry classification results.</strong>
                     <i>2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)</i>.
                     doi: <a href="https://doi.org/10.1109/CVPRW.2018.00304">10.1109/CVPRW.2018.00304</a>
                 </p>
@@ -198,7 +198,7 @@
                     Creekmore A, Wiley JW, Verdone JE, Veltri RW, Pienta KJ, Coffey DS,
                     <a href="https://atheylab.ccmb.med.umich.edu/">Athey BD</a>,
                     <a href="https://www.socr.umich.edu/people/dinov/">Dinov ID</a>. 2018.
-                    3D cell nuclear morphology: microscopy imaging dataset and voxel-based morphometry classification results.
+                    <strong>3D cell nuclear morphology: microscopy imaging dataset and voxel-based morphometry classification results.</strong>
                     <i>2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)</i>.
                     doi: <a href="https://doi.org/10.1109/CVPRW.2018.00304">10.1109/CVPRW.2018.00304</a>
                 </p>
@@ -233,7 +233,7 @@
                 <p>
                     Zheng G, <a href="https://alxndrkalinin.github.io">Kalinin AA</a>,  <a href="https://www.socr.umich.edu/people/dinov/">Dinov ID</a>,
                     Meixner W, Zhu S, Wiley JW. 2018.
-                    Hypothesis: Caco-2 cell rotational 3D mechanogenomic Turing patterns has clinical implications to colon crypts.
+                    <strong>Hypothesis: Caco-2 cell rotational 3D mechanogenomic Turing patterns has clinical implications to colon crypts.</strong>
                     <i>Journal of Cellular and Molecular Medicine</i>, 22(12), 6380-6385.
                     doi: <a href="https://doi.org/10.1111/jcmm.13853">10.1111/jcmm.13853</a>
                 </p>
@@ -287,7 +287,7 @@
                     <a href="https://atheylab.ccmb.med.umich.edu/">Athey BD</a>,
                     <a href="https://maomlab.github.io/">O’Meara MJ</a>,
                     <a href="https://www.socr.umich.edu/people/dinov/">Dinov ID</a>. 2018.
-                    Valproic acid-induced changes of 4D nuclear morphology in astrocyte cells.
+                    <strong>Valproic acid-induced changes of 4D nuclear morphology in astrocyte cells.</strong>
                     <i>Molecular Biology of the Cell</i>, 2(18), 1624-1633.
                     doi: <a href="https://doi.org/10.1091/mbc.E20-08-0502">10.1091/mbc.E20-08-0502</a>
                 </p>
@@ -314,6 +314,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('div > ul > li > p > a[data-toggle="tab"]').on('click', function (e) {
+            var targetTab = $(this).attr('href');
+            $('.nav-tabs a[href="' + targetTab + '"]').tab('show');
+        });
+    });
+</script>
 <!-- Start of StatCounter Code -->
 <script type="text/javascript">
     var sc_project=5714596;
