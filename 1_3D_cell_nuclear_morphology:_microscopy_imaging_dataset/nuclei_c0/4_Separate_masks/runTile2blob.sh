@@ -3,10 +3,10 @@
 # wrapper for tile2blob, outputs the list of their paths
 # requires TiffLib 4
 #
-# 1st parameter - ipath to nput TIFF volume
+# 1st parameter - path to input TIFF volume
 # 2nd parameter - path to original TIFF volume
 # 3rd parameter - path to TiffLib
-# 4rd parameter - path to directory with tile2blob binary
+# 4th parameter - path to directory with tile2blob binary
 # 4th parameter - path to output list file of separated masks
 
 

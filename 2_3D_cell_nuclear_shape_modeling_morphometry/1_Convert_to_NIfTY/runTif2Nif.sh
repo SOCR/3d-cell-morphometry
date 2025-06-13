@@ -6,8 +6,8 @@
 # 1st parameter - path to input TIFF volume
 # 2nd parameter - path to metadata file
 # 3rd parameter - path to TiffLib
-# 4rd parameter - path to directory with tif2nif binary
-# 4th parameter - path to output NIfTI volume
+# 4th parameter - path to directory with tif2nif binary
+# 5th parameter - path to output NIfTI volume
 #
 
 while [[ $# > 1 ]]

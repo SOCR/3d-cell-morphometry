@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 #
-# merges the results of classification of all cells and reports image-level output label,
-#  cell-level accuracy and average probability
-# requires Python with NumPy
+# Merge classification results for all cells and report image-level label,
+# accuracy, and average probability. Requires Python with NumPy.
 #
 # 1st parameter - path to list file with paths to all cells classification result files
 # 2nd parameter - path to output file with results
@@ -13,29 +12,34 @@
 from __future__ import division
 
 import argparse
+from typing import List, Tuple
 
 from numpy import genfromtxt
 
 
 def main(res_file_lst, output_file):
     TRUE_LABEL, FALSE_LABEL = "ss", "prolif"
-    result_files = genfromtxt(res_file_lst, delimiter="\n", dtype="str")
-    results = []
-    for f in result_files:
-        res = genfromtxt(f, delimiter=",", dtype=(str, float))
-        results.append(res)
-    print(str(results))
-    acc = sum(x[0] == TRUE_LABEL for x in results) / len(results)
+    result_files = genfromtxt(res_file_lst, delimiter="\n", dtype=str)
+
+    def _parse_result_file(path: str) -> Tuple[str, float]:
+        label, prob = genfromtxt(path, delimiter=",", dtype=str)
+        return label, float(prob)
+
+    results: List[Tuple[str, float]] = [_parse_result_file(f) for f in result_files]
+
+    acc = sum(r[0] == TRUE_LABEL for r in results) / float(len(results))
     label = TRUE_LABEL if acc >= 0.5 else FALSE_LABEL
-    avg_prob = sum(float(x[1]) for x in results if x[0] == label) / (acc * len(results))
-    f = open(output_file, "w")
-    f.write(
-        "Image level prediction: %s, Accuracy: %0.2f, Avg. probability: %0.2f\n\nProbabilities per cell:\n"
-        % (label, acc, avg_prob)
-    )
-    for res in results:
-        f.write("Label: %s, prob: %0.2f\n" % (res[0], float(res[1])))
-    f.close()
+
+    probs = [r[1] for r in results if r[0] == label]
+    avg_prob = sum(probs) / len(probs) if probs else 0.0
+
+    with open(output_file, "w", encoding="utf-8") as fh:
+        fh.write(
+            "Image level prediction: %s, Accuracy: %0.2f, Avg. probability: %0.2f\n\n"
+            "Probabilities per cell:\n" % (label, acc, avg_prob)
+        )
+        for res in results:
+            fh.write("Label: %s, prob: %0.2f\n" % (res[0], res[1]))
 
 
 if __name__ == "__main__":
