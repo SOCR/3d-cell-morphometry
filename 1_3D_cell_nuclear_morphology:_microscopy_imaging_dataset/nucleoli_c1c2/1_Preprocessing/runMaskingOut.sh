@@ -32,5 +32,5 @@ esac
 shift # past argument or value
 done
 
-# TODO: pass Fiji and macro pathes as parameters
-../software/Fiji.app/ImageJ-linux64 --headless --console -macro ../software/scripts/MaskOut.ijm $c0'|'$c2'|'$output_file
+# TODO: pass Fiji and macro paths as parameters
+../software/Fiji.app/ImageJ-linux64 --headless --console -macro ../software/scripts/MaskOut.ijm "$c0|$c2|$output_file"

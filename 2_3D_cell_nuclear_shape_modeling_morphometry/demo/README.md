@@ -1,5 +1,7 @@
 # [SOCR](http://socr.umich.edu/) 3D Cell Morphometry Project
-## Workflows and instructions how to run them live
+## Instructions for running a demo Pipeline workflow
+
+`[June 2, 2024] Update`: Previous version of this page suggested to use Pipeline Client Web Start or Web App. Because both of them do not appear to be supported anymore, we now recommend running workflows using the desktop native [Pipeline Client](https://pipeline.loni.usc.edu/products-services/pipeline-software/). To be able to run workflows on the LONI Pipeline Server, [apply to become a collaborator](https://pipeline.loni.usc.edu/get-started/become-a-collaborator/).
 
 ### Nuclear morphometric classification live demo:
 
@@ -12,14 +14,10 @@ It outputs .csv file with image-level output label, nucleus-level accuracy and a
 labels and probabilities for individual nuclear masks that were segmented out of 3D input sub-volume,
 passed the curation, 3D shape modeling, feature extraction, and classification.
 
-Instructions below describe how to use Pipeline in a guest mode. If you already have LONI Pipeline credentials
-you can just download [Pipeline Client](http://pipeline.loni.usc.edu/products-services/pipeline-software/) 
-and log in using your username and password.
+Instructions below describe how to use Pipeline if you already have LONI Pipeline credentials.
  
-1. Download and install [LONI Pipeline Client Web Start](http://pipeline.loni.usc.edu/files/webstart/pipeline.jnlp)
-(requires Java<sup>[1](#myfootnote1)</sup>)
-2. Create "Try-It-Now" connection by clicking Connections icon at the bottom-right corner of the client to connect
-to the server without credentials (enter space for password)
+1. Download and install [Pipeline Client](https://pipeline.loni.usc.edu/products-services/pipeline-software/)
+2. Click Connections icon at the bottom-right corner of the client to connect to the server with your LONI Pipeline credentials
 3. Download workflow file 
 [c0-classification-demo-run160.pipe](../demo/c0-classification-demo-run160.pipe) 
 and open in the Pipeline client
@@ -30,12 +28,7 @@ and availability of free nodes in cluster, it will start running jobs
  the output file from [Output Files tab](http://pipeline.loni.usc.edu/learn/user-guide/execution/#Viewing%20output)
 
 You can also double-click on group in the workflow at any moment to see individual modules inside.
-You can disconnect while the workflow is running – under Connections you will be able to see your unique GUEST-ID
-that you can use to reconnect later and check workflow status (enter space for password).
-Having your GUEST-ID you should be able to use [LONI Pipeline Web App](http://pipeline.loni.usc.edu/webapp/)
-to reconnect to the same sessions (web app is still in Beta and might not work as expected).
+You can disconnect while the workflow is running and reconnect later.
 Workflow protocol can be ran multiple times to validate reproducibility of the morphometry results.
 Pipeline documentation, including instructions module definition, modification, and execution,
 is available on the [official website](http://pipeline.loni.usc.edu).
-
-<a name="myfootnote1">1</a>: If you have problems accessing Java applications using Chrome, [Oracle recommends](https://www.java.com/en/download/faq/chrome.xml) using Internet Explorer (Windows) or Safari (Mac OS X) instead.

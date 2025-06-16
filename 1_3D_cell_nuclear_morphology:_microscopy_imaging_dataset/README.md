@@ -1,6 +1,8 @@
 # [SOCR](http://socr.umich.edu/) 3D Cell Morphometry Project
 ## 1. 3D cell nuclear morphology: microscopy imaging dataset
 
+Kalinin, A.A., Allyn-Feuer, A., Ade, A., Fon, G.V., Meixner, W., Dilworth, D., De Wet, J.R., Higgins, G.A., Zheng, G., Creekmore, A., Wiley, J.W., _et al_. 2018. 3D cell nuclear morphology: microscopy imaging dataset and voxel-based morphometry classification results. In _Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops_ (pp. 2272-2280). [doi:10.1109/CVPRW.2018.00304](https://doi.org/10.1109/CVPRW.2018.00304)
+
 ### Source code, models, and documentation for 3D image pre-processing, per-channel segmentation, and curation
 
 Inputs: 3D TIFF images (volumes) in each of 3 channels
@@ -10,7 +12,7 @@ Inputs: 3D TIFF images (volumes) in each of 3 channels
 
 1. [Convert each volume](./nuclei_c0/1_Preprocessing) to 8-bit greyscale and apply despeckling using [ImageJ](https://imagej.nih.gov/ij/)
 2. [Segment each volume](./nuclei_c0/2_Segmentation) in 3D using
-[Farsight toolkit's Nuclear Segmentation](http://farsight-toolkit.org/wiki/Nuclear_Segmentation) algorithm
+[Farsight toolkit's Nuclear Segmentation](http://farsight-toolkit.ee.uh.edu/wiki/Nuclear_Segmentation) algorithm
 3. [Fill holes](./nuclei_c0/3_Fill_holes) in derived nuclear masks using [MATLAB](https://www.mathworks.com/products/matlab.html)
 4. [Separate nuclear masks](./nuclei_c0/4_Separate_masks) into individual volumes (implemented using [LibTIFF](http://www.libtiff.org/))
 5. [Filter out nuclear masks](./nuclei_c0/5_Mask_curation) that do not pass min and/or max thresholds for voxel count (mask volume) and compactness
